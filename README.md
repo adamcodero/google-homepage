@@ -1,0 +1,1 @@
+This is my first web project.  I will attempt to make a copy of Google's webpage, even though they are a data-mining operation and I use a private search engine instead.
