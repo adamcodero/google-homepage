@@ -1,27 +1,46 @@
 <!DOCTYPE html>
 <style>
 
-#logo
-{
-    margin-top: 186px;
-    margin-left: auto;
-    margin-right: auto;
-    width: 300px;
-}
-
 #imgdimensions
 {
     max-width: 300px;
     max-height: 131px;
 }
 
-#search {
-    display: block;
+#logo
+{
+    margin-top: 166px;
     margin-left: auto;
     margin-right: auto;
-    width: 221px;    
+    width: 300px;
 }
 
+#search {
+    margin-left: auto;
+    margin-right: auto;
+    width: 400px;    
+}
+
+#box 
+{
+    box-sizing: border-box;
+    width: 400px;
+    margin-bottom: 15px;
+}
+
+.bt
+{
+    font-size: 18px;
+    font-family:Cambria, 'Times New Roman';
+    position: relative;
+    left: 36%
+    
+}
+
+#b2 {
+    margin-left: 15px;
+
+}
 </style>
 
 <div id="logo">
@@ -30,6 +49,12 @@
 </div>
 
     <form id="search"   action="searcher.html" >
-    <input type="text"> 
+    <input type="text" id="box"> 
     </form>
 
+    
+    <button type="button" class="bt">Tracking Search</button>
+    
+    
+    <button type="button" class="bt" id="b2">Not Feeling Lucky</button>
+    </div>
