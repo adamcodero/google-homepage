@@ -2,36 +2,33 @@
 <style>
 
 ul
-{ 
+{
     list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
 }
 
-li {
-  float: left;
-  font-size: 9pt;
-}
-
-a {
+ul a {
   display: block;
   padding: 8px;
   color: black;
   text-decoration: none;
 }
 
-#leftheader
+li {
+  font-size: 9pt;
+    
+}
+
+li.left {
+    float: left;
+}
+
+li.right
 {
-    margin-left: 600px;
+    float: right;
 }
 
 #topbutton
 {
-    position: absolute;
-    right: 20px;
-    top: 8px;
-    padding: 6px 12px;
     font-size: 9pt; 
     font-weight: bold;
     color: white;
@@ -45,16 +42,25 @@ a {
 
 #imgdimensions
 {
-    max-width: 300px;
-    max-height: 131px;
+    
 }
 
 #logo
 {
-    margin-top: 100px;
+    display: block;       /* way to center an image */
     margin-left: auto;
     margin-right: auto;
-    width: 300px;
+    width: 60%;
+    padding-top:100px; 
+    max-width: 300px;
+    max-height: 131px; 
+
+    /* display: flex;      another way to center a block/image
+    text-align: -webkit -center;
+    margin-left: auto;
+    margin-right:auto; */
+    
+    
 }
 
 #search {
@@ -63,47 +69,48 @@ a {
     width: 400px;    
 }
 
-#box 
+/* #box 
 {
     box-sizing: border-box;
     width: 400px;
     margin-bottom: 15px;
-}
+} */
 
 .bt
 {
     font-size: 18px;
     font-family:Cambria, 'Times New Roman';
-    position: relative;
-    left: 440px;
+   
     
 }
 
 #b2 {
-    margin-left: 15px;
+    
 }
 
 </style>
 
+<div>
 <ul>
-    <li><a href="">About Our Machinations</a></li>
-    <li><a href="">Buy Our Stuff</a></li>  
-    <li id="leftheader"><a href="">SheMail</a></li>
-    <li><a href="">Facial Recognition Pictures</a></li>     
+    <li class="left"><a href="">About Our Machinations</a></li>
+    <li class="left"><a href="">Buy Our Stuff</a></li> 
+    <li class="right"><button id="topbutton">Enhance Tracking</button></li>
+    <li class="right"><a href="">SheMail</a></li>
+    <li class="right"><a href="">Facial Recognition Pictures</a></li>     
 </ul>
-
-<button id="topbutton">Enhance Tracking</button> 
-
-<div id="logo">
-    <img src="http://media02.hongkiat.com/logo-parodies-with-slogans/google.jpg"
-    id="imgdimensions">
 </div>
 
-    <form id="search"   action="searcher.html" >
+
+<div>
+    <img id ="logo" src="http://media02.hongkiat.com/logo-parodies-with-slogans/google.jpg">
+</div>
+
+
+    <form id="search"   action="searcher.html">
     <input type="text" id="box"> 
     </form>
 
     <button class="bt">Tracking Search</button>
         
     <button type="button" class="bt" id="b2">Not Feeling Lucky</button>
-    </div>
+    
