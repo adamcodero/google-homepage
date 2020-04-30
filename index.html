@@ -24,7 +24,7 @@ max-height: 82px;
 {
 list-style-type: none;
 float: left;
-margin: 20px;
+margin: 10px;
 }
 
 /* This assigns the Gmail, Images and Sign In to the right */
@@ -32,10 +32,37 @@ margin: 20px;
 {
     list-style-type: none;
     float: right;
-    margin: 20px;   
+    margin: 10px;   
 }
 
-/* The following all seem to center their respective items */
+/* This styles the links in the topbar */
+a:link 
+{
+    text-decoration: none;
+    color: black;
+    font-family:'Times New Roman', Times, serif;
+}
+
+/* This sets the characteristics of the sign-in button.  I had to add -px to get it align with the rest of
+the navbar.  Not sure why it wasn't aligned. */
+#signin
+{
+    background-color:#4285f4;
+    color: white;
+    font-weight: bold;
+    padding: 5px 15px;
+    position: relative;
+    top: -6px;
+}
+
+/* This changes background and color text when the cursor hovers over the sign in button */
+#signin:hover
+{
+    background-color: white;
+    color: #4285f4;
+}
+
+/* This, #buttons, and #box all seem to center their respective items */
 #logo
 {
     display: flex;
@@ -43,13 +70,15 @@ margin: 20px;
     margin: auto;   
 }
 
+
+/* This centers the buttons below the search bar */
 .buttons {
   display: flex;
   justify-content: center;
   margin: auto;
 }
 
-/* This separates the two buttons */
+/* This separates the two buttons and makes the buttons rounded */
 #b1 
 {
 margin-right: 10px;
@@ -61,68 +90,45 @@ margin-right: 10px;
   display: flex;
   justify-content: center;
   margin: auto;
-  margin-bottom: 10px;   
+  margin-bottom: 10px;  
+  border-radius: 25px; 
+  padding: 10px;
+  width: 300px;
 }
-
 </style>
 
 <html>
-
 <body>
-<nav id="topbar">
 
-    <!-- These are my top left links -->
+    <nav id="topbar">           <!----  This grouped both the left and right sides of the top bar as one group "topbar" 
+                                    I'm still not sure what it means for it to be an inline block.-->
+   
+   
+<!-- These are my top left links -->
 <ul>
-<li class="topleftbar">About</li>
-<li class="topleftbar">Store</li>
+<li class="topleftbar"><a href="">About Our Machinations</a></li>
+<li class="topleftbar"><a href="">Store Your Data</a></li>
 </ul>
 
 <!-- This are my top right links-->
 <ul>
-    <li class="toprightbar"><button>Sign In</button></li>
-    <li class="toprightbar">Images</li>
-    <li class="toprightbar">Gmail</li>
+    <li class="toprightbar"><button id="signin">Enhanced Tracking</button></li>
+    <li class="toprightbar"><a href="">Facial Recognition</a></li>
+    <li class="toprightbar"><a href="">SheMail</a></li>
     </ul>
 </nav>
+
 <div>
 <img src="http://media02.hongkiat.com/logo-parodies-with-slogans/google.jpg" id="logo">
 </div>
 
-<input id="box" type="text" placeholder="Search...">
+<input id="box" type="text" placeholder="Search...and receive ads">
 
 <div class="buttons">
        <button id="b1">Track Me</button>  
        <button>Not Feeling Lucky</button>
 </div>
 
-
-
-
-
-
 </body>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 </html>

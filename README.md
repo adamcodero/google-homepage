@@ -1,1 +1,1 @@
-This is my first web project.  I will attempt to make a copy of Google's webpage, even though they are a data-mining operation and I use a private search engine instead.
+This is my first web project.  I made a copy of Google's webpage, even though they are a data-mining operation and I use a private search engine instead.  It was really challenging, since centering in css is challenging.  Using flex helped a lot, but I need to go back and learn more about how flex works.  
